@@ -34,4 +34,38 @@ body {
     font-size: 40px;
     text-align: center;
     background-color: rgb(167, 166, 116);
+    margin-bottom: 0%;
+}
+
+.main {
+    margin: auto;
+    display: inline-flex;
+    background-color: #7a8032;
+}
+.container {
+    margin: 20px
+}
+
+#year {
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+}
+p {
+    font-size: large;
+    justify-items: center;
+    display: flex;
+}
+
+.footer {
+    background-color: rgb(166, 187, 138);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+#name{
+    margin: 10px;
+    font-size: 20px;
+    
 }
