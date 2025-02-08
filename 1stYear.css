@@ -28,6 +28,11 @@ body {
     background-color: beige;
     height: 60px;
 }
+.code{
+    background-color: #7a8032;
+    text-align: center;
+    text-decoration: underline;
+}
 
 #heading2 {
     font-size: 25px;
@@ -107,8 +112,12 @@ p {
 #heading3 {
     font-size: x-large;
     padding-top: 30px;
+    margin-top: 0%;
 }
 
+#heading31 {
+    margin-bottom: 0%;
+}
 
 button {
     padding: 10px 15px;
@@ -132,27 +141,82 @@ button {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevents horizontal scrolling */
+    }
+
     .header {
-        flex-direction: row;
+        flex-direction: column; /* Stack header elements */
+        align-items: center;
         text-align: center;
+        padding: 15px;
+    }
 
-        #container {
-            flex-direction: row;
-        }
+    .show {
+        padding: 40px 10px; /* Reduce padding for better fit */
+    }
 
-        .Syllabus {
-            flex-direction: row;
-            text-align: center;
-        }
+    .Syllabus {
+        flex-direction: column; /* Stack items inside syllabus */
+        width: 95%; /* Adjust width for smaller screens */
+        height: auto;
+        padding: 15px;
+    }
 
-        #heading {
-            font-size: 24px;
-        }
+    .main1, .main2 {
+        flex-direction: column; /* Stack main sections */
+        align-items: center;
+        width: 100%;
+    }
 
-        #heading2 {
-            font-size: 30px;
-            margin-bottom: 0px;
-        }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
 
+    #year {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #heading {
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #heading2, #heading3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    p {
+        font-size: medium;
+        text-align: center;
+        margin: 10px;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Make images responsive */
+    #img {
+        width: 70px;
+        height: 70px;
     }
 }

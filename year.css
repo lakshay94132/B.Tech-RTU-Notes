@@ -90,27 +90,78 @@ button {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
     .header {
-        flex-direction: row;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
         text-align: center;
+        padding: 15px;
+    }
 
-        #container {
-            flex-direction: row;
-        }
+    #heading {
+        font-size: 26px; /* Reduce font size for mobile */
+        text-align: center;
+        margin: 15px;
+    }
 
-        .Syllabus {
-            flex-direction: row;
-            text-align: center;
-        }
+    #img {
+        width: 70px; /* Reduce image size for smaller screens */
+        height: 70px;
+        margin-left: 0;
+    }
 
-        #heading {
-            font-size: 24px;
-        }
+    #heading1 {
+        font-size: 30px; /* Reduce heading size */
+        padding: 20px;
+    }
 
-        #heading2 {
-            font-size: 30px;
-            margin-bottom: 0px;
-        }
+    .main {
+        flex-direction: column; /* Stack sections */
+        align-items: center;
+        width: 100%;
+    }
 
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #year {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: medium;
+        text-align: center;
+        margin: 10px;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Make text properly aligned */
+    #name {
+        font-size: 18px;
+        text-align: center;
     }
 }
