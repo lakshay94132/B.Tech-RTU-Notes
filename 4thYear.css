@@ -1,0 +1,132 @@
+body {
+    margin: auto;
+    padding: auto;
+}
+
+.header {
+    background-color: #676b4f;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#img {
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+#heading {
+    font-size: 40px;
+    margin: 30px;
+    color: #f7f7f7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#heading1 {
+    margin-top: 0%;
+    padding: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(53, 77, 29);
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(167, 166, 116);
+    margin-bottom: 0%;
+}
+
+.show {
+    text-align: center;
+    background-color: #676b4f;
+    padding: 87px;
+}
+
+.Syllabus {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    align-items: center;
+    width: 480px;
+    margin: auto;
+    text-align: center;
+    background-color: beige;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+#heading2 {
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #bbc296;
+}
+
+#heading3 {
+    background-color: #868b4e;
+    text-align: center;
+    padding: 60px;
+    margin: 0%;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.main {
+    margin: auto;
+    display: inline-flex;
+    background-color: #7a8032;
+    margin-top: 0%;
+    padding: 77px;
+}
+
+.container {
+    margin: 20px;
+    justify-content: space-evenly;
+    gap: 20px;
+    display: inline-flex;
+}
+
+#year {
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(120, 141, 44);
+    width: 570px;
+    height: 240px;
+}
+
+p {
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    margin: auto;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: rgb(166, 187, 138);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#name {
+    margin: 10px;
+    font-size: 20px;
+}
