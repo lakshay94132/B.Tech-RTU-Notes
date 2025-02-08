@@ -130,3 +130,102 @@ button {
     margin: 10px;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #img {
+        width: 70px; /* Reduce image size */
+        height: 70px;
+        margin: auto;
+    }
+
+    #heading {
+        font-size: 28px; /* Reduce heading size */
+        text-align: center;
+        margin: 15px;
+    }
+
+    #heading1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .show {
+        padding: 40px 10px; /* Reduce padding for better fit */
+    }
+
+    .container {
+        flex-direction: column; /* Stack items */
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+    }
+
+    #year {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .Syllabus {
+        flex-direction: column; /* Stack items inside syllabus */
+        width: 95%; /* Adjust width for smaller screens */
+        height: auto;
+        padding: 15px;
+    }
+
+    #heading2 {
+        font-size: 22px;
+    }
+
+    #heading3 {
+        font-size: 30px; /* Reduce heading size */
+        padding: 30px;
+    }
+
+    p {
+        font-size: medium;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .main {
+        flex-direction: column; /* Stack sections */
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Make text properly aligned */
+    #name {
+        font-size: 18px;
+        text-align: center;
+    }
+}
