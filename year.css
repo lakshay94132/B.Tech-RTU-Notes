@@ -94,35 +94,35 @@ button {
         padding: 0;
         margin: 0;
         width: 100%;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden; 
     }
 
     .header {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
         padding: 15px;
     }
 
     #heading {
-        font-size: 26px; /* Reduce font size for mobile */
+        font-size: 26px; 
         text-align: center;
         margin: 15px;
     }
 
     #img {
-        width: 70px; /* Reduce image size for smaller screens */
+        width: 70px; 
         height: 70px;
         margin-left: 0;
     }
 
     #heading1 {
-        font-size: 30px; /* Reduce heading size */
+        font-size: 30px; 
         padding: 20px;
     }
 
     .main {
-        flex-direction: column; /* Stack sections */
+        flex-direction: column; 
         align-items: center;
         width: 100%;
     }
@@ -159,7 +159,6 @@ button {
         text-align: center;
     }
 
-    /* Make text properly aligned */
     #name {
         font-size: 18px;
         text-align: center;
