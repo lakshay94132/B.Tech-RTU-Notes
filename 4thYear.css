@@ -130,3 +130,101 @@ button {
     margin: 10px;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden; 
+    }
+
+    .header {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #img {
+        width: 70px; 
+        height: 70px;
+        margin: auto;
+    }
+
+    #heading {
+        font-size: 28px; 
+        text-align: center;
+        margin: 15px;
+    }
+
+    #heading1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .show {
+        padding: 40px 10px; 
+    }
+
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+    }
+
+    #year {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .Syllabus {
+        flex-direction: column; 
+        width: 95%; 
+        height: auto;
+        padding: 15px;
+    }
+
+    #heading2 {
+        font-size: 22px;
+    }
+
+    #heading3 {
+        font-size: 30px; 
+        padding: 30px;
+    }
+
+    p {
+        font-size: medium;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .main {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #name {
+        font-size: 18px;
+        text-align: center;
+    }
+}
