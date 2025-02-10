@@ -84,6 +84,7 @@ body {
     background-color: #7a8032;
     margin-top: 0%;
     padding: 77px;
+    flex-direction: column;
 }
 
 .container {
@@ -99,8 +100,8 @@ body {
     margin: 10px;
     border-radius: 15px;
     background-color: rgb(120, 141, 44);
-    width: 570px;
-    height: 240px;
+    width: 350px;
+    height: 170px;
 }
 
 p {
@@ -130,6 +131,7 @@ button {
     margin: 10px;
     font-size: 20px;
 }
+
 @media (max-width: 768px) {
     body {
         padding: 0;
@@ -143,7 +145,6 @@ button {
         align-items: center;
         text-align: center;
         padding: 15px;
-        width: 105%;
     }
 
     #img {
@@ -161,7 +162,6 @@ button {
     #heading1 {
         font-size: 30px;
         padding: 20px;
-        width: 105%;
     }
 
     .show {
@@ -176,13 +176,8 @@ button {
         display: flex;
     }
 
-    #heading4 {
-        font-size: 28px;
-        padding: 20px;
-    }
-
     #year {
-        width: 75%;
+        width: 70%;
         height: auto;
         padding: 15px;
         font-size: 16px;
@@ -227,7 +222,6 @@ button {
         font-size: 18px;
         padding: 10px;
         text-align: center;
-        width: 105%;
     }
 
     #name {

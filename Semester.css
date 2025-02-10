@@ -84,8 +84,19 @@ body {
     background-color: #7a8032;
     margin-top: 0%;
     padding: 77px;
+    flex-direction: column;
 }
 
+#heading4 {
+    margin-top: 0%;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(53, 77, 29);
+    font-size: 45px;
+    text-align: center;
+    background-color: rgb(167, 166, 116);
+    margin-bottom: 0%;
+}
 .container {
     margin: 20px;
     justify-content: space-evenly;
@@ -99,7 +110,7 @@ body {
     margin: 10px;
     border-radius: 15px;
     background-color: rgb(120, 141, 44);
-    width: 570px;
+    width: 544px;
     height: 240px;
 }
 
@@ -130,6 +141,7 @@ button {
     margin: 10px;
     font-size: 20px;
 }
+
 @media (max-width: 768px) {
     body {
         padding: 0;
