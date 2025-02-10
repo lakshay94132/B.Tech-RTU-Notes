@@ -88,7 +88,7 @@ body {
 }
 
 #heading4 {
-    margin-top: 0%;
+    margin-top: 8%;
     padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(53, 77, 29);
@@ -96,6 +96,7 @@ body {
     text-align: center;
     background-color: rgb(167, 166, 116);
     margin-bottom: 0%;
+    text-decoration: underline;
 }
 .container {
     margin: 20px;
