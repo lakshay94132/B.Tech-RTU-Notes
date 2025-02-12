@@ -1,28 +1,24 @@
-// Sample notes data
-const notes = [
-    { title: "Note 1", content: "Content for note 1" },
-    { title: "Note 2", content: "Content for note 2" },
-    { title: "Note 3", content: "Content for note 3" },
-];
+document.addEventListener("DOMContentLoaded", function () {
+    // Navigation from Index Page to Year Page
+    let notesButton = document.querySelector("button"); // First button on index.html
+    if (notesButton) {
+        notesButton.addEventListener("click", function () {
+            window.location.href = "year.html";
+        });
+    }
 
-// Function to display notes
-function displayNotes(notes) {
-    const notesList = document.getElementById('notes-list');
-    notesList.innerHTML = ''; // Clear existing notes
-    notes.forEach(note => {
-        const noteElement = document.createElement('div');
-        noteElement.classList.add('note');
-        noteElement.innerHTML = `<h3>${note.title}</h3><p>${note.content}</p>`;
-        notesList.appendChild(noteElement);
-    });
-}
-
-// Search functionality
-document.getElementById('search').addEventListener('input', function() {
-    const searchTerm = this.value.toLowerCase();
-    const filteredNotes = notes.filter(note => note.title.toLowerCase().includes(searchTerm));
-    displayNotes(filteredNotes);
+    // Navigation from Year Page to Semester Page with Year Parameter
+    let yearButtons = document.querySelectorAll("h1#heading4 + .container button");
+    if (yearButtons.length > 0) {
+        yearButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                let parentHeading = this.closest(".container").previousElementSibling;
+                if (parentHeading && parentHeading.tagName === "H1") {
+                    let selectedYear = parentHeading.textContent.trim().charAt(0); // Extract the first digit of year
+                    window.location.href = `semester.html?year=${selectedYear}`;
+                }
+            });
+        });
+    }
+    
 });
-
-// Initial display of notes
-displayNotes(notes);
