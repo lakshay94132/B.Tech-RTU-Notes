@@ -99,11 +99,14 @@ body {
     text-decoration: underline;
 }
 
-.container {
+#Year_1,
+#Year_2,
+#Year_3,
+#Year_4 {
     margin: 20px;
     justify-content: space-evenly;
     gap: 20px;
-    display: inline-flex;
+    display: inline-flex
 }
 
 #Sem_1,
@@ -189,7 +192,10 @@ button {
         width: 100%;
     }
 
-    .container {
+    #Year_1,
+    #Year_2,
+    #Year_3,
+    #Year_4 {
         flex-direction: column;
         align-items: center;
         width: 100%;
