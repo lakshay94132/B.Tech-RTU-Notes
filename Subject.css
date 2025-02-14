@@ -111,6 +111,12 @@ body {
     display: inline-flex
 }
 
+.subject{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 #Sub_1,
 #Sub_2,
 #Sub_3,
