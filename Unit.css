@@ -1,70 +1,189 @@
-/* Unit.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-/* Header Styles */
 .header {
-    text-align: center;
-    background-color: #f8f9fa;
-    padding: 20px;
+    background-color: #676b4f;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #img {
-    width: 150px;
-    height: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin-right: 15px;
 }
 
 #heading {
-    font-size: 2.5em;
-    margin: 10px 0;
-}
-
-/* Main Section Styles */
-.main {
-    padding: 20px;
+    font-size: 40px;
+    color: #f7f7f7;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #heading1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Unit Styles */
-.unit {
-    margin: 15px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.unit h2 {
-    font-size: 1.5em;
-}
-
-.unit button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.unit button:hover {
-    background-color: #0056b3;
-}
-
-/* Footer Styles */
-.footer {
+    background-color: rgb(167, 166, 116);
+    color: rgb(53, 77, 29);
+    font-size: 50px;
+    padding: 35px;
     text-align: center;
+    margin: 0;
+    font-family: 'Lucida Sans', Geneva, sans-serif;
+}
+
+.show {
+    background-color: #676b4f;
+    padding: 87px;
+    text-align: center;
+}
+
+.main {
+    background-color: #7a8032;
+    padding: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading4 {
+    font-size: 45px;
+    color: rgb(53, 77, 29);
+    background-color: rgb(167, 166, 116);
     padding: 20px;
-    background-color: #f8f9fa;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
 }
 
-.footer a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007bff;
+#Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
-.footer .organiser {
-    margin-top: 10px;
+.subject {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#Sub_1, #Sub_2, #Sub_3, #Sub_4, #Sub_5, #Sub_6, #Sub_7 {
+    background-color: rgb(120, 141, 44);
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #bbc296;
+    color: white;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: rgb(166, 187, 138);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#name {
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #heading {
+        font-size: 26px;
+    }
+
+    #img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #heading1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+    }
+
+    #Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #Sub_1, #Sub_2, #Sub_3, #Sub_4, #Sub_5, #Sub_6, #Sub_7 {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: medium;
+        text-align: center;
+        margin: 10px;
+    }
+
+    button {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #name {
+        font-size: 18px;
+        text-align: center;
+    }
 }
