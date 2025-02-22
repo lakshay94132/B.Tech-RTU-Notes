@@ -1,0 +1,70 @@
+/* Unit.css */
+
+/* Header Styles */
+.header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+#img {
+    width: 150px;
+    height: auto;
+}
+
+#heading {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+/* Main Section Styles */
+.main {
+    padding: 20px;
+}
+
+#heading1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Unit Styles */
+.unit {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.unit h2 {
+    font-size: 1.5em;
+}
+
+.unit button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.unit button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer .organiser {
+    margin-top: 10px;
+}
