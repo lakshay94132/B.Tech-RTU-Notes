@@ -70,7 +70,7 @@ body {
 }
 
 .unit {
-    background-color: white;
+    background-color: rgb(164, 184, 109);
     width: 300px;
     padding: 15px;
     border-radius: 10px;
@@ -82,13 +82,19 @@ body {
     align-items: center;
 }
 
+.adjust {
+    display: flex;
+    gap: 10px;
+
+}
+
 button {
     padding: 10px 15px;
     border-radius: 1rem;
     border: none;
     cursor: pointer;
-    background-color: #bbc296;
-    color: white;
+    background-color: #6f7a36;
+    color: rgb(255, 255, 255);
     font-size: 16px;
 }
 
