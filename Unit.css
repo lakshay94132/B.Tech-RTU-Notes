@@ -37,61 +37,49 @@ body {
     font-family: 'Lucida Sans', Geneva, sans-serif;
 }
 
-.show {
-    background-color: #676b4f;
-    padding: 87px;
-    text-align: center;
-}
-
 .main {
     background-color: #7a8032;
-    padding: 77px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #heading4 {
-    font-size: 45px;
+    font-size: 35px;
     color: rgb(53, 77, 29);
     background-color: rgb(167, 166, 116);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    text-decoration: underline;
-    margin: 0;
+    margin: 10px 0;
 }
 
-#Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
+.Sem_1, .Sem_2, .Sem_3, .Sem_4, .Sem_5, .Sem_6, .Sem_7, .Sem_8 {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 20px;
 }
 
 .subject {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
+    gap: 20px;
 }
 
-#Sub_1, #Sub_2, #Sub_3, #Sub_4, #Sub_5, #Sub_6, #Sub_7 {
-    background-color: rgb(120, 141, 44);
-    width: 350px;
-    height: 200px;
-    border-radius: 15px;
-    border: 2px solid black;
-    padding: 20px;
+.unit {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid black; /* Border applied only to units */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-p {
-    font-size: 22px;
-    margin: 10px 0;
+    align-items: center;
 }
 
 button {
@@ -104,31 +92,23 @@ button {
     font-size: 16px;
 }
 
+button:hover {
+    background-color: #a0a786;
+}
+
 .footer {
     background-color: rgb(166, 187, 138);
     font-size: 20px;
     text-align: center;
-    padding: 10px;
-}
-
-#name {
-    font-size: 20px;
-    margin: 10px;
+    padding: 15px;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     .header {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 15px;
+        padding: 10px;
     }
 
     #heading {
@@ -148,42 +128,24 @@ button {
     .main {
         flex-direction: column;
         padding: 20px;
-        width: 100%;
     }
 
-    #Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
+    .Sem_1, .Sem_2, .Sem_3, .Sem_4, .Sem_5, .Sem_6, .Sem_7, .Sem_8 {
         flex-direction: column;
         align-items: center;
         width: 100%;
         padding: 10px;
     }
 
-    #Sub_1, #Sub_2, #Sub_3, #Sub_4, #Sub_5, #Sub_6, #Sub_7 {
+    .unit {
         width: 80%;
         height: auto;
         padding: 15px;
-        font-size: 18px;
-    }
-
-    p {
-        font-size: medium;
-        text-align: center;
-        margin: 10px;
     }
 
     button {
         width: 80%;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .footer {
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    #name {
-        font-size: 18px;
-        text-align: center;
+        padding: 8px;
+        font-size: 14px;
     }
 }
