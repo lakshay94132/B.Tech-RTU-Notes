@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const year = params.get('year');
     if (year) {
         document.querySelectorAll('.Year_1, .Year_2, .Year_3, .Year_4').forEach(el => el.style.display = 'none');
-        document.querySelector(`.Year_${year}`).style.display = 'block';
+        const selectedYear = document.querySelector(`.Year_${year}`);
+        if (selectedYear) selectedYear.style.display = 'block';
     }
 });
 
@@ -23,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const sem = params.get('sem');
     if (sem) {
         document.querySelectorAll('.semester').forEach(el => el.style.display = 'none');
-        document.querySelector(`#Sem_${sem}`).style.display = 'block';
+        const selectedSem = document.querySelector(`#Sem_${sem}`);
+        if (selectedSem) selectedSem.style.display = 'block';
     }
 });
 
@@ -63,11 +65,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     
 
-        // Show only the selected subject's units
+        // Show only the selected subject and its units
         const selectedSubject = document.querySelector(`#${subject}`);
         if (selectedSubject) {
             selectedSubject.style.display = 'block';
             selectedSubject.querySelectorAll('.unit').forEach(unit => unit.style.display = 'block');
+        } else {
+            console.error("Subject not found:", subject);
         }
-        
+    
 });
