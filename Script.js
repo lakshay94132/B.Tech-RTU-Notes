@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
-
+ 
 // Redirect from Year page to Semester page
 function goToSemesterPage(year) {
     localStorage.setItem("selectedYear", year);
