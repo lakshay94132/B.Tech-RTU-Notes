@@ -42,6 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll("[id^='Sem_']").forEach(el => el.style.display = "none");
         document.querySelectorAll(".heading4").forEach(el => el.style.display = "none");
 
+        let headings = document.querySelectorAll("h1");
+        headings.forEach(heading => {
+            if (heading.textContent.includes(`${selectedSemester}st`) ||
+                heading.textContent.includes(`${selectedSemester}nd`) ||
+                heading.textContent.includes(`${selectedSemester}rd`) ||
+                heading.textContent.includes(`${selectedSemester}th`)) {
+                heading.style.display = "block";
+            }
+        });
+
         
         // Show only the subjects for the selected semester
         let semesterSection = document.getElementById(`Sem_${selectedSemester}`);
