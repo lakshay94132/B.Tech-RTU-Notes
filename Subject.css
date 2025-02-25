@@ -1,9 +1,12 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
+/* Header */
 .header {
     background-color: #676b4f;
     display: flex;
@@ -11,6 +14,7 @@ body {
     padding: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 #img {
@@ -37,18 +41,14 @@ body {
     font-family: 'Lucida Sans', Geneva, sans-serif;
 }
 
-.show {
-    background-color: #676b4f;
-    padding: 87px;
-    text-align: center;
-}
-
+/* Main Section */
 .main {
     background-color: #7a8032;
-    padding: 77px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #heading4 {
@@ -56,12 +56,11 @@ body {
     color: rgb(53, 77, 29);
     background-color: rgb(167, 166, 116);
     padding: 20px;
-    text-align: center;
     text-decoration: underline;
-    margin: 0;
+    margin: 0 0 20px;
 }
 
-#Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
+[id^='Sem_'] {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +75,7 @@ body {
     align-items: center;
 }
 
-#Sub_1, #Sub_2, #Sub_3, #Sub_4, #Sub_5, #Sub_6, #Sub_7 {
+.Sub {
     background-color: rgb(120, 141, 44);
     width: 350px;
     height: 200px;
@@ -96,14 +95,20 @@ p {
 
 button {
     padding: 10px 15px;
-    border-radius: 1rem;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     background-color: #bbc296;
     color: white;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
+button:hover {
+    background-color: #8a936a;
+}
+
+/* Footer */
 .footer {
     background-color: rgb(166, 187, 138);
     font-size: 20px;
@@ -116,19 +121,11 @@ button {
     margin: 10px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
     .header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        padding: 15px;
     }
 
     #heading {
@@ -146,44 +143,32 @@ button {
     }
 
     .main {
-        flex-direction: column;
         padding: 20px;
-        width: 100%;
     }
 
-    #Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
+    [id^='Sem_'] {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 10px;
     }
 
-    #Sub_1, #Sub_2, #Sub_3, #Sub_4, #Sub_5, #Sub_6, #Sub_7 {
+    .Sub {
         width: 80%;
         height: auto;
         padding: 15px;
-        font-size: 18px;
     }
 
     p {
-        font-size: medium;
-        text-align: center;
-        margin: 10px;
+        font-size: 18px;
     }
 
     button {
         width: 80%;
-        padding: 10px;
         font-size: 16px;
     }
 
     .footer {
         font-size: 18px;
         padding: 10px;
-    }
-
-    #name {
-        font-size: 18px;
-        text-align: center;
     }
 }
