@@ -62,6 +62,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let selectedSubject = localStorage.getItem("selectedSubject");
+    console.log("Selected Subject from Storage:", selectedSubject);
+
+    if (selectedSubject && window.location.pathname.includes("Unit.html")) {
+        // Hide all subjects and their headings
+        document.querySelectorAll(".subject").forEach(el => el.style.display = "none");
+        document.querySelectorAll(".heading4").forEach(el => el.style.display = "none");
+
+        // Show only the selected subject’s section and heading
+        let subjectUnitSection = document.querySelector(`.subject[data-subject='${selectedSubject}']`);
+        let subjectHeading = document.querySelector(`.heading4[data-subject='${selectedSubject}']`);
+
+        if (subjectUnitSection) {
+            subjectUnitSection.style.display = "block";
+        } else {
+            console.error("Error: Subject section not found for:", selectedSubject);
+        }
+
+        if (subjectHeading) {
+            subjectHeading.style.display = "block";
+        } else {
+            console.error("Error: Subject heading not found for:", selectedSubject);
+        }
+    }
+});
  
 // Redirect from Year page to Semester page
 function goToSemesterPage(year) {
