@@ -87,7 +87,7 @@ body {
     flex-direction: column;
 }
 
-#heading4 {
+.heading4 {
     margin-top: 8%;
     padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

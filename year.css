@@ -49,7 +49,7 @@ body {
     gap: 20px;
 }
 
-#year {
+.year {
     text-align: center;
     border: 2px solid black;
     margin: 10px;
@@ -134,7 +134,7 @@ button {
         padding: 10px;
     }
 
-    #year {
+    .year {
         width: 75%;
         height: auto;
         padding: 15px;

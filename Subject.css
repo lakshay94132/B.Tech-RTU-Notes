@@ -51,7 +51,7 @@ body {
     text-align: center;
 }
 
-#heading4 {
+.heading4 {
     font-size: 45px;
     color: rgb(53, 77, 29);
     background-color: rgb(167, 166, 116);
