@@ -102,7 +102,7 @@ button {
 
 button:hover {
     transform: translateY(-8px);
-    box-shadow: 0px 10px 15px rgba(255, 107, 107, 0.3);
+    box-shadow: 0px 10px 15px rgba(37, 99, 235, 0.3);
 }
 
 .footer {

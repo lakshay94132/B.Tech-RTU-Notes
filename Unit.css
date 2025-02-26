@@ -1,44 +1,66 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
+    perspective: 1000px;
+    background-color: #ffffff;
+    color: #0d47a1;
     font-family: Arial, sans-serif;
 }
 
 .header {
-    background-color: #676b4f;
+    background-color: #2563eb;
     display: flex;
     align-items: center;
     padding: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header:hover {
+    transform: scale(1.05);
 }
 
 #img {
-    width: 90px;
-    height: 90px;
-    border-radius: 5px;
-    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.6s ease-in-out;
+}
+
+#img:hover {
+    transform: rotateY(360deg);
 }
 
 #heading {
-    font-size: 40px;
-    color: #f7f7f7;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 34px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.6s ease-in-out;
+}
+
+#heading:hover {
+    transform: rotateX(10deg) translateY(-5px);
 }
 
 #heading1 {
-    background-color: rgb(167, 166, 116);
-    color: rgb(53, 77, 29);
-    font-size: 50px;
-    padding: 35px;
+    background: linear-gradient(45deg, #a8dadc, #457b9d);
+    color: #1d3557;
+    font-size: 42px;
+    padding: 30px;
     text-align: center;
-    margin: 0;
-    font-family: 'Lucida Sans', Geneva, sans-serif;
+    transition: transform 0.5s ease-in-out;
+    margin: auto;
+}
+
+#heading1:hover {
+    transform: scale(1.1);
 }
 
 .main {
-    background-color: #7a8032;
+    background-color: #ffffff;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -47,19 +69,17 @@ body {
 
 .heading4 {
     font-size: 35px;
-    color: rgb(53, 77, 29);
-    background-color: rgb(167, 166, 116);
-    padding: 15px;
+    color: #1d3557;
     text-align: center;
     margin: 10px 0;
 }
 
 .Sem_1, .Sem_2, .Sem_3, .Sem_4, .Sem_5, .Sem_6, .Sem_7, .Sem_8 {
-    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    margin: 20px;
 }
 
 .subject {
@@ -70,88 +90,103 @@ body {
 }
 
 .unit {
-    background-color: rgb(164, 184, 109);
-    width: 250px;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid black; /* Border applied only to units */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    border: 3px solid #ffffff;
+    margin: 35px;
+    border-radius: 20px;
+    width: 360px;
+    height: 200px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    color: black;
+    box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.unit:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .adjust {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
-    padding: 10px 15px;
-    border-radius: 1rem;
+    padding: 12px 20px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: #6f7a36;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
 }
 
 button:hover {
-    background-color: #a0a786;
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 15px rgba(37, 99, 235, 0.3);
 }
 
 .footer {
-    background-color: rgb(166, 187, 138);
-    font-size: 20px;
+    background-color: #2563eb;
+    font-size: 22px;
     text-align: center;
     padding: 15px;
+    transition: transform 0.3s;
+    color: black
 }
 
-@media (max-width: 768px) {
+.flink {
+    color: #080808;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.footer:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+@media (max-width: 700px) {
     .header {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 10px;
+        padding: 15px;
     }
 
     #heading {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     #img {
-        width: 70px;
-        height: 70px;
-    }
-
-    #heading1 {
-        font-size: 30px;
-        padding: 20px;
+        width: 80px;
+        height: 80px;
     }
 
     .main {
         flex-direction: column;
-        padding: 20px;
-    }
-
-    .Sem_1, .Sem_2, .Sem_3, .Sem_4, .Sem_5, .Sem_6, .Sem_7, .Sem_8 {
-        flex-direction: column;
         align-items: center;
-        width: 100%;
-        padding: 10px;
     }
 
     .unit {
-        width: 80%;
+        width: 275px;
         height: auto;
         padding: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .adjust {
+        flex-direction: column;
+        align-items: center;
     }
 
     button {
-        width: 80%;
-        padding: 8px;
-        font-size: 14px;
+        width: 90%;
+        font-size: 18px;
     }
 }
