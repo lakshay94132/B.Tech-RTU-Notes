@@ -1,166 +1,169 @@
 body {
     margin: auto;
     padding: auto;
+    perspective: 1000px;
+    background-color: #ffffff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 .header {
-    background-color: #676b4f;
+    background-color: #2563eb;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header:hover {
+    transform: scale(1.05);
 }
 
 #heading {
-    font-size: 30px;
+    font-size: 34px;
     margin: 30px;
     color: #f7f7f7;
-    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.6s ease-in-out;
+}
+
+#heading:hover {
+    transform: rotateX(10deg) translateY(-5px);
 }
 
 #img {
-    width: 90px;
-    height: 90px;
-    border-radius: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.6s ease-in-out;
+}
+
+#img:hover {
+    transform: rotateY(360deg);
 }
 
 #heading1 {
-    margin-top: 0%;
     padding: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(53, 77, 29);
-    font-size: 40px;
+    font-size: 42px;
     text-align: center;
-    background-color: rgb(167, 166, 116);
-    margin-bottom: 0%;
+    background: linear-gradient(45deg, #a8dadc, #457b9d);
+    color: #1d3557;
+    transition: transform 0.5s ease-in-out;
+    margin: auto;
+}
+
+#heading1:hover {
+    transform: scale(1.1);
 }
 
 .main {
     margin: auto;
-    display: inline-flex;
-    background-color: #7a8032;
-}
-
-.container {
-    margin: 51px;
-    justify-content: space-evenly;
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: center;
+    padding: 20px;
 }
 
 .year {
     text-align: center;
-    border: 2px solid black;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgb(120, 141, 44);
+    border: 3px solid #ffffff;
+    margin: 35px;
+    border-radius: 20px;
     width: 550px;
     height: 200px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    color: black;
+    box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-
 p {
-    font-size: large;
-    justify-content: center;
-    display: flex;
-    text-align: center;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.year:hover {
+    transform: rotateY(15deg) scale(1.1);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 button {
-    padding: 10px 15px;
-    margin: auto;
-    border-radius: 1rem;
+    padding: 12px 20px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
-    margin-bottom: 5px;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 15px rgba(255, 107, 107, 0.3);
 }
 
 .footer {
-    background-color: rgb(166, 187, 138);
-    font-size: 20px;
+    background-color: #2563eb;
+    font-size: 22px;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    transition: transform 0.3s;
+    color: black;
 }
 
-#name {
-    margin: 10px;
-    font-size: 20px;
-
+.flink {
+    color: #080808;
+    text-decoration: none;
+    transition: transform 0.3s;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        overflow-x: hidden; 
-    }
+.footer:hover {
+    transform: translateY(-5px) scale(1.05);
+}
 
+@media (max-width: 700px) {
     .header {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 15px;
     }
 
     #heading {
-        font-size: 26px; 
-        text-align: center;
-        margin: 15px;
+        font-size: 28px;
     }
 
     #img {
-        width: 70px; 
-        height: 70px;
-        margin-left: 0;
+        width: 80px;
+        height: 80px;
     }
 
     #heading1 {
-        font-size: 30px; 
+        font-size: 32px;
         padding: 20px;
     }
 
     .main {
-        flex-direction: column; 
-        align-items: center;
-        width: 100%;
-    }
-
-    .container {
         flex-direction: column;
         align-items: center;
-        width: 100%;
-        padding: 10px;
     }
 
     .year {
-        width: 75%;
+        width: 325px;
         height: auto;
         padding: 15px;
-        font-size: 16px;
-    }
-
-    p {
-        font-size: medium;
-        text-align: center;
-        margin: 10px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 0px;
     }
 
     button {
-        width: 80%;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    .footer {
+        width: 90%;
         font-size: 18px;
-        padding: 10px;
-        text-align: center;
-    }
-
-    #name {
-        font-size: 18px;
-        text-align: center;
     }
 }

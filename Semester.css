@@ -189,7 +189,7 @@ button {
     .main {
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 260px;
     }
 
     #Year_1,
@@ -210,7 +210,7 @@ button {
     #Sem_6,
     #Sem_7,
     #Sem_8 {
-        width: 75%;
+        width: 100%;
         height: auto;
         padding: 15px;
         font-size: 17px;

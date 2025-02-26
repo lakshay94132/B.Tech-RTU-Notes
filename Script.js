@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show only the selected year's section
         let yearSection = document.getElementById(`Year_${selectedYear}`);
         if (yearSection) {
-            yearSection.style.display = "block";
+            yearSection.style.display = "";
         }
     }
 
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show only the subjects for the selected semester
         let semesterSection = document.getElementById(`Sem_${selectedSemester}`);
         if (semesterSection) {
-            semesterSection.style.display = "block";
+            semesterSection.style.display = "";
         } else {
             console.error("Error: Semester section not found for Sem_" + selectedSemester);
         }

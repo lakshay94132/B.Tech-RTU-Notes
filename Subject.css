@@ -70,15 +70,15 @@ body {
 
 .subject {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     align-items: center;
 }
 
 .Sub {
     background-color: rgb(120, 141, 44);
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 180px;
     border-radius: 15px;
     border: 2px solid black;
     padding: 20px;
