@@ -39,7 +39,7 @@ body {
 }
 
 .Main-page {
-    background-color: #678aa3;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
 }
@@ -139,7 +139,13 @@ body {
     font-size: 22px;
     text-align: center;
     padding: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s;
+}
+
+.flink {
+    color: #080808;
+    text-decoration: none;
     transition: transform 0.3s;
 }
 
