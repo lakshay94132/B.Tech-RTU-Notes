@@ -104,6 +104,7 @@ body {
 
 .Syllabus {
     text-align: center;
+    display: flex;
     border: 3px solid #ffffff;
     margin: 35px;
     border-radius: 20px;
