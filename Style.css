@@ -169,8 +169,7 @@ h5 {
 
 #btn1 {
     padding: 17px;
-    margin-left: auto;
-    margin-right: auto;;
+    margin: auto;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -178,6 +177,8 @@ h5 {
     color: white;
     font-size: 18px;
     transition: transform 0.3sease-in-out, box-shadow 0.3s;
+    min-width: 70px;
+    max-height: 50px;
 }
 
 #btn1:hover {
@@ -226,5 +227,15 @@ h5 {
 
     #btn {
         min-width: 50px;
+    }
+
+    #btn1 {
+        min-width: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        max-height: 50px;
+        padding: 10px;
     }
 }
