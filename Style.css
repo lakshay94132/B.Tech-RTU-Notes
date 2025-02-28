@@ -24,6 +24,15 @@ body {
 
 }
 
+#QC, #CC, #CD {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px;
+    max-width: 400px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 p {
     font-size: 16px;
     color: #ffffff;
@@ -72,10 +81,11 @@ p {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 15px;
     color: #2563eb;
     text-align: center;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .icon {
@@ -151,7 +161,7 @@ h5 {
     font-size: 42px;
     color: #1d3557;
     text-align: center;
-    transition: transform 0.5s ease-in-out;
+    text-shadow: -5px 0px 6px black;
 }
 
 .Syllabus {
@@ -159,10 +169,13 @@ h5 {
     display: flex;
     border: 3px solid #ffffff;
     margin: 35px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 20px;
     width: 375px;
-    height: 70px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s;
     color: black;
     box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -176,7 +189,7 @@ h5 {
     background: #2563eb;
     color: white;
     font-size: 18px;
-    transition: transform 0.3sease-in-out, box-shadow 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
     min-width: 70px;
     max-height: 50px;
 }
