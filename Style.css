@@ -34,10 +34,9 @@ body {
 }
 
 p {
-    font-size: 17px;
+    font-size: 16px;
     color: #ffffff;
-    margin: 10px;
-    max-width: 400px;
+    max-width: 590px;
     text-align: center;
     padding-bottom: 15px;
     min-width: 400px;
@@ -91,6 +90,7 @@ h5 {
 .icon {
     width: 100px;
     height: 100px;
+    margin-top: 30px;
     padding-left: auto;
     padding-right: auto;
     transition: transform 0.3s ease-in-out;
@@ -140,9 +140,8 @@ h5 {
 }
 
 #heading1 {
-    padding-top: 20px;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     font-size: 42px;
     text-align: center;
     color: #ffffff;
@@ -166,7 +165,7 @@ h5 {
     font-size: 42px;
     color: #1d3557;
     text-align: center;
-    text-shadow: -5px 0px 6px black;
+    text-shadow: -5px 0px 6px #1d3557;
 }
 
 .Syllabus {
@@ -213,22 +212,16 @@ h5 {
     font-size: 22px;
     text-align: center;
     padding: 15px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .flink {
-    color: #080808;
+    color: #ffffff;
     text-decoration: none;
     transition: transform 0.3s;
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     #container {
         flex-direction: column;
         align-items: center;
