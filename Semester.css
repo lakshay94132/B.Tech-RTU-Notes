@@ -1,18 +1,29 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #0d47a1;
+    --background-color: #ffffff;
+    --font-family: Arial, sans-serif;
+}
+
 body {
     margin: auto;
-    padding: auto;
-    perspective: 1000px;
-    background-color: #ffffff;
-    color: #0d47a1;
-    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
     overflow-x: hidden;
 }
 
 .header {
-    background-color: #2563eb;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
+}
+
+#img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 #heading {
@@ -28,34 +39,6 @@ body {
     transform: rotateX(10deg) translateY(-5px);
 }
 
-#img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.main {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #aa6f6f;
-    max-width: 1100px;
-}
-
-.Syllabus {
-    text-align: center;
-    background-color: #ffffff;
-    border: 2px solid #42a5f5;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.4s ease-in-out;
-}
-
-.Syllabus:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-}
-
 #heading1 {
     padding: 30px;
     font-size: 42px;
@@ -64,6 +47,14 @@ body {
     color: #1d3557;
     transition: transform 0.5s ease-in-out;
     margin: auto;
+}
+
+.main {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #aa6f6f;
+    max-width: 1100px;
 }
 
 .heading4 {
@@ -97,16 +88,12 @@ body {
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-#heading1:hover {
-    transform: scale(1.1);
-}
-
 button {
     padding: 12px 20px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background: #2563eb;
+    background: var(--primary-color);
     color: white;
     font-size: 18px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
@@ -118,7 +105,7 @@ button:hover {
 }
 
 .footer {
-    background-color: #2563eb;
+    background-color: var(--primary-color);
     font-size: 22px;
     text-align: center;
     padding: 15px;
@@ -132,7 +119,6 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-
     #heading {
         font-size: 28px;
     }
@@ -168,11 +154,7 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
-
-    .Syllabus {
-        width: 90%;
-    }
-
+    
     button {
         width: 90%;
         font-size: 18px;
