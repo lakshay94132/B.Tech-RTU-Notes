@@ -125,11 +125,11 @@ button:hover {
     text-align: center;
     padding: 15px;
     transition: transform 0.3s;
-    color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
 }
 
 .flink {
-    color: #080808;
+    color: #ffffff;
     text-decoration: none;
 }
 
