@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
@@ -42,7 +42,7 @@ body {
 
 .profile p {
     color: #555;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .details h2 {
