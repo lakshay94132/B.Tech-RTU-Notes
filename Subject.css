@@ -7,10 +7,11 @@
 
 body {
     margin: auto;
-    background-color: var(--background-color);
-    color: var(--secondary-color);
-    font-family: var(--font-family);
-    overflow-x: hidden;
+    padding: 0;
+    perspective: 1000px;
+    background-color: #ffffff;
+    color: #0d47a1;
+    font-family: Arial, sans-serif;
 }
 
 .header {
@@ -38,7 +39,6 @@ body {
 #heading:hover {
     transform: rotateX(10deg) translateY(-5px);
 }
-
 
 #heading1 {
     background: linear-gradient(45deg, #a8dadc, #457b9d);
@@ -81,8 +81,10 @@ body {
 .subject {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping */
     gap: 15px;
     align-items: center;
+    justify-content: center; /* Center the subjects */
 }
 
 .Sub {
@@ -137,11 +139,17 @@ button:hover {
     text-decoration: none;
 }
 
+
 @media (max-width: 700px) {
-   
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
     #heading {
         font-size: 28px;
-        margin-left: 15px;
     }
 
     #img {
