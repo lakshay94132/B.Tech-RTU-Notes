@@ -15,6 +15,22 @@ body {
     min-width: 400px;
 }
 
+#about {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#about:hover {
+    transform: translateY(-5px);
+    box-shadow: #7f7f91 0px 5px 20px 0px;
+}
+
 .header2 {
     background-color: #2563eb;
     align-items: center;
