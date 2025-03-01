@@ -105,3 +105,21 @@ body {
     color: #d63447;
     text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
 }
+
+button {
+    background-color: #d63447;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d63447d7; /* Darker green */
+}
