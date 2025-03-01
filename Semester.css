@@ -90,7 +90,7 @@ p {
     max-width: 500px;
     min-width: 300px;
     height: 240px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s;
     color: black;
     box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     display: flex;
