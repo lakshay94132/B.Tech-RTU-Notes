@@ -39,7 +39,15 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     text-align: center;
-    transform: perspective(1000px) rotateY(0deg);
+}
+
+#lak:hover {
+    transform: perspective(1000px) rotateY(15deg);
+    transition: transform 0.5s;
+}
+
+#yuv:hover {
+    transform: perspective(1000px) rotateY(-15deg);
     transition: transform 0.5s;
 }
 
