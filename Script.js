@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show only the selected year's semesters in Semester.html
     let selectedYear = localStorage.getItem("selectedYear");
     console.log("Selected Year from Storage:", selectedYear);
-    
+
     if (selectedYear && window.location.pathname.includes("Semester.html")) {
         // Hide all year sections and their headings
         document.querySelectorAll("[id^='Year_']").forEach(el => el.style.display = "none");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 heading.style.display = "block";
             }
         });
-        
+
         // Show only the selected year's section
         let yearSection = document.getElementById(`Year_${selectedYear}`);
         if (yearSection) {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show only the selected semester's subjects in Subject.html
     let selectedSemester = localStorage.getItem("selectedSemester");
     console.log("Selected Semester from Storage:", selectedSemester);
-    
+
     if (selectedSemester && window.location.pathname.includes("Subject.html")) {
         // Hide all semester subjects
         document.querySelectorAll("[id^='Sem_']").forEach(el => el.style.display = "none");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        
+
         // Show only the subjects for the selected semester
         let semesterSection = document.getElementById(`Sem_${selectedSemester}`);
         if (semesterSection) {
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
- 
+
 // Redirect from Year page to Semester page
 function goToSemesterPage(year) {
     localStorage.setItem("selectedYear", year);
