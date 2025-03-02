@@ -1,5 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
@@ -11,43 +13,15 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.profiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-.profile {
-    max-width: 400px;
-    margin: 50px 20px;
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     text-align: center;
-}
-
-#lak:hover {
-    transform: perspective(1000px) rotateY(15deg);
-    transition: transform 0.5s;
-}
-
-#yuv:hover {
-    transform: perspective(1000px) rotateY(-15deg);
+    transform: perspective(1000px) rotateY(0deg);
     transition: transform 0.5s;
 }
 
@@ -68,7 +42,7 @@ body {
 
 .profile p {
     color: #555;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .details h2 {
@@ -104,22 +78,4 @@ body {
 .details ul li a:hover {
     color: #d63447;
     text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
-}
-
-button {
-    background-color: #d63447;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #d63447d7; /* Darker green */
 }

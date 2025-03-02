@@ -1,23 +1,29 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #0d47a1;
+    --background-color: #ffffff;
+    --font-family: Arial, sans-serif;
+}
+
 body {
     margin: auto;
-    padding: auto;
-    perspective: 1000px;
-    background-color: #ffffff;
-    color: #0d47a1;
-    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
 }
 
 .header {
-    background-color: #2563eb;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.header:hover {
-    transform: scale(1.05);
+#img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 #heading {
@@ -33,40 +39,6 @@ body {
     transform: rotateX(10deg) translateY(-5px);
 }
 
-#img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: transform 0.6s ease-in-out;
-}
-
-#img:hover {
-    transform: rotateY(360deg);
-}
-
-.main {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    justify-content: center;
-    padding: 20px;
-}
-
-.Syllabus {
-    text-align: center;
-    background-color: #ffffff;
-    border: 2px solid #42a5f5;
-    border-radius: 10px;
-    padding: 20px;
-    transition: transform 0.4s ease-in-out;
-}
-
-.Syllabus:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-}
-
 #heading1 {
     padding: 30px;
     font-size: 42px;
@@ -77,30 +49,53 @@ body {
     margin: auto;
 }
 
+.main {
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    flex-wrap: wrap;
+    align-items: center; /* Center items horizontally */
+    background-color: #ffffff;
+    width: 100%; /* Ensure full width */
+    max-width: 100%; /* Prevent overflow */
+}
+
 .heading4 {
     font-size: 35px;
     color: #1d3557;
     text-align: center;
-    margin: 10px 0;
+    margin: 20px auto; /* Centering the heading */
+    width: 100%; /* Ensuring it takes full width for centering */
+}
+p {
+    font-size: 17px;
+    color: #000000;
+    text-align: center;
+    margin: 10px 20px 10px 20px; /* Centering the paragraph */
 }
 
 #Year_1, #Year_2, #Year_3, #Year_4 {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 50px;
     margin: 20px;
+    margin-bottom: 50px;
 }
 
 #Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
     text-align: center;
     border: 3px solid #ffffff;
-    margin: 35px;
     border-radius: 20px;
-    width: 550px;
-    height: 200px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 240px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.3s;
     color: black;
     box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Sem_1:hover, #Sem_2:hover, #Sem_3:hover, #Sem_4:hover, #Sem_5:hover, #Sem_6:hover, #Sem_7:hover, #Sem_8:hover {
@@ -108,16 +103,12 @@ body {
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-#heading1:hover {
-    transform: scale(1.1);
-}
-
 button {
     padding: 12px 20px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background: #2563eb;
+    background: var(--primary-color);
     color: white;
     font-size: 18px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
@@ -129,32 +120,23 @@ button:hover {
 }
 
 .footer {
-    background-color: #2563eb;
+    background-color: var(--primary-color);
     font-size: 22px;
     text-align: center;
     padding: 15px;
     transition: transform 0.3s;
-    color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
 }
 
 .flink {
-    color: #080808;
+    color: #ffffff;
     text-decoration: none;
-    transition: transform 0.3s;
 }
 
-.footer:hover {
-    transform: translateY(-5px) scale(1.05);
-}
-
-@media (max-width: 700px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 15px;
+@media (max-width: 768px) {
+    body {
+        min-width: 410px;
     }
-
     #heading {
         font-size: 28px;
     }
@@ -166,28 +148,19 @@ button:hover {
 
     #Year_1, #Year_2, #Year_3, #Year_4 {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Ensure vertical stacking */
         justify-content: space-evenly;
         gap: 20px;
         margin: 20px;
     }
-    
+
     #Sem_1, #Sem_2, #Sem_3, #Sem_4, #Sem_5, #Sem_6, #Sem_7, #Sem_8 {
-        text-align: center;
-        border: 3px solid #ffffff;
-        margin: 35px;
-        border-radius: 20px;
-        width: 300px;
-        height: 220px;
-        margin-left: auto;
-        margin-right: auto;
-        transition: transform 0.5s ease-in-out, box-shadow 0.5s;
-        color: black;
-        box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        width: 100%;
+        height: auto;
     }
 
     .main {
-        flex-direction: column;
+        flex-direction: column; /* Ensure vertical stacking */
         align-items: center;
     }
 
@@ -196,7 +169,8 @@ button:hover {
     }
 
     button {
-        width: 90%;
+        width: 35%;
+        margin-bottom: 15px;
         font-size: 18px;
     }
 }

@@ -15,6 +15,22 @@ body {
     min-width: 400px;
 }
 
+#about {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#about:hover {
+    transform: translateY(-5px);
+    box-shadow: #7f7f91 0px 5px 20px 0px;
+}
+
 .header2 {
     background-color: #2563eb;
     align-items: center;
@@ -24,11 +40,19 @@ body {
 
 }
 
+#QC, #CC, #CD {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px;
+    max-width: 400px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
 p {
     font-size: 16px;
     color: #ffffff;
-    margin: 10px;
-    max-width: 400px;
+    max-width: 590px;
     text-align: center;
     padding-bottom: 15px;
     min-width: 400px;
@@ -47,11 +71,6 @@ p {
     margin-bottom: auto;
     color: #030303;
     text-transform: uppercase;
-    transition: transform 0.6s ease-in-out;
-}
-
-#heading:hover {
-    transform: rotateX(10deg) translateY(-5px);
 }
 
 .Main-page {
@@ -72,17 +91,24 @@ p {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 15px;
     color: #2563eb;
     text-align: center;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .icon {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
     padding-left: auto;
     padding-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.3);
 }
 
 .icon-container {
@@ -125,9 +151,8 @@ h5 {
 }
 
 #heading1 {
-    padding-top: 20px;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     font-size: 42px;
     text-align: center;
     color: #ffffff;
@@ -151,7 +176,7 @@ h5 {
     font-size: 42px;
     color: #1d3557;
     text-align: center;
-    transition: transform 0.5s ease-in-out;
+    text-shadow: -5px 0px 6px #1d3557;
 }
 
 .Syllabus {
@@ -159,10 +184,13 @@ h5 {
     display: flex;
     border: 3px solid #ffffff;
     margin: 35px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 20px;
     width: 375px;
-    height: 70px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s;
     color: black;
     box-shadow: 0 0px 15px 10px rgb(39 74 213 / 20%), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -176,7 +204,7 @@ h5 {
     background: #2563eb;
     color: white;
     font-size: 18px;
-    transition: transform 0.3sease-in-out, box-shadow 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
     min-width: 70px;
     max-height: 50px;
 }
@@ -195,27 +223,16 @@ h5 {
     font-size: 22px;
     text-align: center;
     padding: 15px;
-    color: rgb(0, 0, 0);
-    transition: transform 0.3s;
+    color: rgb(255, 255, 255);
 }
 
 .flink {
-    color: #080808;
+    color: #ffffff;
     text-decoration: none;
     transition: transform 0.3s;
 }
 
-.footer:hover {
-    transform: translateY(-5px) scale(1.05);
-}
-
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     #container {
         flex-direction: column;
         align-items: center;
