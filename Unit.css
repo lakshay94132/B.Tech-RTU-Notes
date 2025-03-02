@@ -102,6 +102,7 @@ body {
 button {
     padding: 12px 20px;
     border-radius: 10px;
+    margin-top: 20px;
     border: none;
     cursor: pointer;
     background: #2563eb;
