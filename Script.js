@@ -1,18 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Fix: Ensure 'btn' exists before adding event listener
-    let btn = document.getElementById("btn");
-    if (btn) {
-        btn.addEventListener("click", function () {
-            window.location.href = "year.html";
-        });
+    function handleRouting() {
+        const path = window.location.pathname;
+
+        if (path.includes("Semester.html")) {
+            let selectedYear = new URLSearchParams(window.location.search).get("year");
+            if (selectedYear) {
+                localStorage.setItem("selectedYear", selectedYear);
+            }
+        }
+
+        if (path.includes("Subject.html")) {
+            let selectedSemester = new URLSearchParams(window.location.search).get("semester");
+            if (selectedSemester) {
+                localStorage.setItem("selectedSemester", selectedSemester);
+            }
+        }
+
+        if (path.includes("Unit.html")) {
+            let selectedSubject = new URLSearchParams(window.location.search).get("subject");
+            if (selectedSubject) {
+                localStorage.setItem("selectedSubject", selectedSubject);
+            }
+        }
     }
 
-    // Show only the selected year's semesters in Semester.html
+    // ✅ Show only the selected year's semesters in Semester.html
     let selectedYear = localStorage.getItem("selectedYear");
     console.log("Selected Year from Storage:", selectedYear);
 
     if (selectedYear && window.location.pathname.includes("Semester.html")) {
-        // Hide all year sections and their headings
         document.querySelectorAll("[id^='Year_']").forEach(el => el.style.display = "none");
         document.querySelectorAll(".heading4").forEach(el => el.style.display = "none");
 
@@ -26,19 +42,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Show only the selected year's section
         let yearSection = document.getElementById(`Year_${selectedYear}`);
         if (yearSection) {
             yearSection.style.display = "";
+        } else {
+            console.error("Error: Year section not found for Year_" + selectedYear);
         }
     }
 
-    // Show only the selected semester's subjects in Subject.html
+    // ✅ Show only the selected semester's subjects in Subject.html
     let selectedSemester = localStorage.getItem("selectedSemester");
     console.log("Selected Semester from Storage:", selectedSemester);
 
     if (selectedSemester && window.location.pathname.includes("Subject.html")) {
-        // Hide all semester subjects
         document.querySelectorAll("[id^='Sem_']").forEach(el => el.style.display = "none");
         document.querySelectorAll(".heading4").forEach(el => el.style.display = "none");
 
@@ -52,8 +68,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-
-        // Show only the subjects for the selected semester
         let semesterSection = document.getElementById(`Sem_${selectedSemester}`);
         if (semesterSection) {
             semesterSection.style.display = "";
@@ -61,20 +75,17 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error: Semester section not found for Sem_" + selectedSemester);
         }
     }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
+    // ✅ Show only the selected subject’s units in Unit.html
     let selectedSubject = localStorage.getItem("selectedSubject");
     console.log("Selected Subject from Storage:", selectedSubject);
 
     if (selectedSubject && window.location.pathname.includes("Unit.html")) {
-        // Hide all subjects and their headings
         document.querySelectorAll(".subject").forEach(el => el.style.display = "none");
         document.querySelectorAll(".heading4").forEach(el => el.style.display = "none");
 
-        // Show only the selected subject’s section and heading
-        let subjectUnitSection = document.querySelector(`.subject[data-subject='${selectedSubject}']`);
-        let subjectHeading = document.querySelector(`.heading4[data-subject='${selectedSubject}']`);
+        let subjectUnitSection = document.getElementById(selectedSubject);
+        let subjectHeading = document.querySelector(`.heading4[data-subject="${selectedSubject}"]`);
 
         if (subjectUnitSection) {
             subjectUnitSection.style.display = "block";
@@ -88,22 +99,31 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error: Subject heading not found for:", selectedSubject);
         }
     }
+
+    // ✅ Call handleRouting() at the end
+    handleRouting();
+
+    // ✅ Fix: Ensure 'btn' exists before adding an event listener
+    let btn = document.getElementById("btn");
+    if (btn) {
+        btn.addEventListener("click", function () {
+            window.location.href = "year.html";
+        });
+    }
 });
 
-// Redirect from Year page to Semester page
+// ✅ Redirect Functions
 function goToSemesterPage(year) {
     localStorage.setItem("selectedYear", year);
-    window.location.href = "Semester.html";
+    window.location.href = `Semester.html?year=${year}`;
 }
 
-// Redirect from Semester page to Subject page
 function goToSubjectPage(semester) {
     localStorage.setItem("selectedSemester", semester);
-    window.location.href = "Subject.html";
+    window.location.href = `Subject.html?semester=${semester}`;
 }
 
-// Redirect from Subject page to Unit page
 function goToUnitPage(subject) {
     localStorage.setItem("selectedSubject", subject);
-    window.location.href = "Unit.html";
+    window.location.href = `Unit.html?subject=${subject}`;
 }
