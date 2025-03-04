@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Selected Subject from Storage:", selectedSubject);
 
     if (selectedSubject && window.location.pathname.includes("Unit.html")) {
-        // Hide all subjects and their headings
+
         document.querySelectorAll(".subject").forEach(el => el.style.display = "none");
         document.querySelectorAll(".heading4").forEach(el => el.style.display = "none");
 
