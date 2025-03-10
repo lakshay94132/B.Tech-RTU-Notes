@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let yearSection = document.getElementById(`Year_${selectedYear}`);
             if (yearSection) {
-                yearSection.style.display = "block";
+                yearSection.style.display = "flex";
             } else {
                 console.error("Error: Year section not found for Year_" + selectedYear);
             }
