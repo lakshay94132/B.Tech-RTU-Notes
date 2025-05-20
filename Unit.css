@@ -39,10 +39,6 @@ body {
     margin: auto;
 }
 
-#heading1:hover {
-    transform: scale(1.1);
-}
-
 .main {
     background-color: #ffffff;
     padding: 50px;

@@ -35,10 +35,6 @@ body {
     transition: transform 0.6s ease-in-out;
 }
 
-#heading:hover {
-    transform: rotateX(10deg) translateY(-5px);
-}
-
 #heading1 {
     padding: 30px;
     font-size: 42px;
