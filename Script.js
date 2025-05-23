@@ -128,3 +128,29 @@ function goToUnitPage(subject) {
     localStorage.setItem("selectedSubject", subject);
     window.location.href = `Unit.html?subject=${subject}`;
 }
+
+// Notification Slider Functionality
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector('.notification-slider');
+    if (!slider) return;
+
+    let scrollAmount = 0;
+    const scrollStep = 0.001; // pixels per frame
+    const scrollDelay = 20; // ms per frame
+
+    function scrollSlider() {
+        scrollAmount += scrollStep;
+        if (scrollAmount >= slider.scrollWidth / 2) {
+            scrollAmount = 0;
+        }
+        slider.scrollLeft = scrollAmount;
+    }
+
+    let scrollInterval = setInterval(scrollSlider, scrollDelay);
+
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+    slider.addEventListener('mouseleave', () => {
+        scrollInterval = setInterval(scrollSlider, scrollDelay);
+    });
+});

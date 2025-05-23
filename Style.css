@@ -15,6 +15,35 @@ body {
     min-width: 400px;
 }
 
+/* Notification Slider Styles */
+.notification-slider {
+    background-color: #02339b;
+    color: rgb(238, 255, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    user-select: none;
+    position: relative;
+}
+
+.notification-item {
+    display: inline-block;
+    padding: 0 50px;
+    animation: slide-left 20s linear infinite;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 #about {
     margin-left: auto;
     margin-right: 15px;
