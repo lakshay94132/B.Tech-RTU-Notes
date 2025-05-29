@@ -4,8 +4,8 @@ Redirect 301 /programming-for-problem-solving-pps/ https://rtunotes.in/Unit.html
 Redirect 301 /advanced-engineering-mathematics-aem/ https://rtunotes.in/Unit.html?subject=AEM
 Redirect 301 /discrete-mathematics-structures-dms/ https://rtunotes.in/Unit.html?subject=DMS
 Redirect 301 /computer-graphics-and-multimedia/ https://rtunotes.in/Unit.html?subject=CGM
-Redirect 301 /basic-electrical-engineering-bee/ https://rtunotes.in/Unit.html?subject=BCE
-Redirect 301 /basic-mechanical-engineering-bme/ https://rtunotes.in/Unit.html?subject=BME
+Redirect 301 /basic-electrical-engineering-bee/ https://rtunotes.in/Unit.html?subject=BEE
+Redirect 301 /basic-mechanical-engineering-bme/ https://rtunotes.in/Unit.html?subject=Basic_Mechanical
 Redirect 301 /microprocessor-and-interfacempi/ https://rtunotes.in/Unit.html?subject=MPI
 Redirect 301 /information-security-system-iss/ https://rtunotes.in/Unit.html?subject=ISS
 Redirect 301 /principle-of-communication-poc/ https://rtunotes.in/Unit.html?subject=POC
@@ -24,8 +24,9 @@ Redirect 301 /cloud-computing-cc/ https://rtunotes.in/Unit.html?subject=CC
 Redirect 301 /operating-system/ https://rtunotes.in/Unit.html?subject=OS
 Redirect 301 /compiler-design/ https://rtunotes.in/Unit.html?subject=CD
 Redirect 301 /chemistry/ https://rtunotes.in/Unit.html?subject=Chemistry
-Redirect 301 /human-values-hv/ https://rtunotes.in/Unit.html?subject=HV
+Redirect 301 /human-values-hv/ https://rtunotes.in/Unit.html?subject=Human_Values
 Redirect 301 /physics/ https://rtunotes.in/Unit.html?subject=Physics
+Redirect 301 /engineering-mathematics-2/ https://rtunotes.in/Unit.html?subject=Eng_Math_2
 Redirect 301 /1st-semester/ https://rtunotes.in/Subject.html?semester=1
 Redirect 301 /2nd-semester/ https://rtunotes.in/Subject.html?semester=2
 Redirect 301 /3rd-semester/ https://rtunotes.in/Subject.html?semester=3
@@ -39,6 +40,8 @@ Redirect 301 /2nd-year-notes/ https://rtunotes.in/Semester.html?year=2
 Redirect 301 /3rd-year-notes/ https://rtunotes.in/Semester.html?year=3
 Redirect 301 /4th-year-notes/ https://rtunotes.in/Semester.html?year=4
 Redirect 301 /wp-content/uploads/2024/08/CSE-Sylabus-3rd-Sem.pdf https://rtunotes.in/syllabus/CSE-Sylabus-3rd-Sem.pdf
+Redirect 301 /wp-content/uploads/2024/09/CSE-Sylabus-3rd-Sem.pdf https://rtunotes.in/syllabus/CSE-Sylabus-3rd-Sem.pdf
 Redirect 301 /wp-content/uploads/2024/09/CSE-Sylabus-4th-Sem.pdf https://rtunotes.in/syllabus/CSE-Sylabus-4th-Sem.pdf
 Redirect 301 /wp-content/uploads/2024/08/CSE-Sylabus-1st-Year.pdf https://rtunotes.in/syllabus/CSE-Sylabus-1st-Year.pdf
+Redirect 301 /wp-content/uploads/2024/09/CSE-Sylabus-1st-Year.pdf https://rtunotes.in/syllabus/CSE-Sylabus-1st-Year.pdf
 Redirect 301 /wp-content/uploads/2024/08/CSE-Sylabus-5th-6th-Sem.pdf https://rtunotes.in/syllabus/CSE-Sylabus-5th-6th-Sem.pdf
