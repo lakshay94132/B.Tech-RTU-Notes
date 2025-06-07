@@ -36,10 +36,6 @@ body {
     transition: transform 0.6s ease-in-out;
 }
 
-#heading:hover {
-    transform: rotateX(10deg) translateY(-5px);
-}
-
 #heading1 {
     background: linear-gradient(45deg, #a8dadc, #457b9d);
     color: #1d3557;
@@ -48,10 +44,6 @@ body {
     text-align: center;
     transition: transform 0.5s ease-in-out;
     margin: auto;
-}
-
-#heading1:hover {
-    transform: scale(1.1);
 }
 
 .main {
